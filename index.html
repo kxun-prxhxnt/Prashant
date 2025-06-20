@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prashant Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom right, #5f2c82, #49a09d);
+      color: #fff;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    body.dark-mode {
+      background: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: normal;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    nav .links {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+      margin-left: 10px;
+    }
+
+    .icons a {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      padding: 85px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 9/16;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:active {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    .toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login {
+      position: fixed;
+      top: 10px;
+      right: 80px;
+      background: #fff;
+      color: #000;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-form {
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      background: #fff;
+      color: #000;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    #about {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #about img {
+      width: 175px;
+      height: 169px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid white;
+    }
+
+    #about p {
+      max-width: 1000px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    body.dark-mode #about {
+      background: #121212;
+      color: #e0e0e0;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <nav>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <div class="icons">
+        <a href="https://www.instagram.com/kxun_prxhxnt?igsh=MW41cnN5Nzh3OGFxbg==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/@kxun_prxhxnt" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home">Prashant ka Blog</header>
+
+  <button class="toggle" onclick="toggleDarkMode()">🌙</button>
+  <button class="login" onclick="toggleLogin()">Login</button>
+
+  <div class="login-form" id="loginForm">
+    <h3>Login</h3>
+    <input type="text" placeholder="Username"><br><br>
+    <input type="password" placeholder="Password"><br><br>
+    <button>Submit</button>
+  </div>
+
+  <div class="container">
+    <h2 id="gallery">Adventure Wali Photos Hai Smjha Kya Thodi Modi...</h2>
+    <p>Dekho Babu Kaisa Bna Hai Website... </p>
+    
+    <div class="gallery">
+  <img src="https://i.postimg.cc/q7QMSHrb/Snapchat-1032741345.jpg" alt="Pic 1">Rashmika
+  <img src="https://i.postimg.cc/JnN6bqmC/IMG-20250619-214131.png" alt="Pic" 2">Tejas
+  <img src="https://i.postimg.cc/13FXHbbN/IMG-20250619-213525.jpg" alt="Pic 3">Ham 3
+  <img src="https://i.postimg.cc/wj79Xk6P/Snapchat-1421551880.jpg" alt="Pic 4">Main
+  
+  <img src="https://i.postimg.cc/x1h0jpw5/Screenshot-2025-04-19-22-31-11-718-com-android-systemui.png" alt="Pic 5">Main hin hun
+<img src="https://i.postimg.cc/2yd8bj7x/Screenshot-2025-06-08-21-08-42-354-com-miui-home.png" alt="Pic 6">Bolne Ki jarurat hai kya
+
+  
+  
+</div>
+
+  </div>
+
+  <section id="about">
+    <img src="https://i.postimg.cc/h4Ztv07X/Screenshot-2025-01-27-19-03-48-390-com-instagram-android.png" alt="Profile Picture">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Prashant. Welcome to my blog where I share my journey, thoughts, and favorite travel moments. I love exploring new places, clicking pictures, and expressing creativity through this website.
+    </p>
+  </section>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    function toggleLogin() {
+      const form = document.getElementById("loginForm");
+      form.style.display = form.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+
+</html>
